@@ -42,7 +42,10 @@ export default function Sidebar() {
         )}
         {showSideBar && (
           <div className="bg-black flex h-[94vh] w-full absolute md:hidden flex-col justify-start items-start p-1 text-white  py-12">
-            <div className="flex flex-col gap-4 px-4 w-full" onClick={() => setShowSideBar(false)}>
+            <div
+              className="flex flex-col gap-4 px-4 w-full"
+              onClick={() => setShowSideBar(false)}
+            >
               <IoClose size={18} className="mb-4" />
 
               <SideMenu
@@ -52,10 +55,10 @@ export default function Sidebar() {
                 href={"/"}
               />
               <SideMenu
-                label="Text Generation"
+                label="Code Translator"
                 icon={<BiCode size={18} />}
                 color={"pink-400"}
-                href={"/text"}
+                href={"/code"}
               />
               <SideMenu
                 label="Image Generation"
