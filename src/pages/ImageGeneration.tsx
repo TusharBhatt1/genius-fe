@@ -38,7 +38,7 @@ export default function Page() {
     setPrompt("");
 
     try {
-      const response = await fetch("http://localhost:5000/getImage", {
+      const response = await fetch("https://genius-be.onrender.com/getImage", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -65,7 +65,7 @@ export default function Page() {
   };
   const fetchChats = async () => {
     try {
-      const response = await fetch("http://localhost:5000/getChats", {
+      const response = await fetch("https://genius-be.onrender.com/getChats", {
         method: "GET",
       });
 
